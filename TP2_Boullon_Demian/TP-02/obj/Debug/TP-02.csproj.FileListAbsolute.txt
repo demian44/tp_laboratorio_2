@@ -1,0 +1,33 @@
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\bin\Debug\TP-02.exe.config
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\bin\Debug\TP-02.exe
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\bin\Debug\TP-02.pdb
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\bin\Debug\Entidades.dll
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\bin\Debug\Entidades.pdb
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\obj\Debug\TP-02.exe
+D:\Federico\VB .Net\Visual C#\utn\TP-02\TP-02\obj\Debug\TP-02.pdb
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\bin\Debug\TP-02.exe.config
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\obj\Debug\TP-02.exe
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\obj\Debug\TP-02.pdb
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\bin\Debug\TP-02.exe
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\bin\Debug\TP-02.pdb
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\bin\Debug\Entidades.dll
+D:\VisualStudio\Federico Dávila\TP-02\TP-02\bin\Debug\Entidades.pdb
+E:\FACU\Laborartorio_2\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+E:\FACU\Laborartorio_2\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+E:\FACU\Laborartorio_2\TP-02\TP-02\obj\Debug\TP-02.exe
+E:\FACU\Laborartorio_2\TP-02\TP-02\obj\Debug\TP-02.pdb
+E:\FACU\Laborartorio_2\TP-02\TP-02\bin\Debug\TP-02.exe.config
+E:\FACU\Laborartorio_2\TP-02\TP-02\bin\Debug\TP-02.exe
+E:\FACU\Laborartorio_2\TP-02\TP-02\bin\Debug\TP-02.pdb
+E:\FACU\Laborartorio_2\TP-02\TP-02\bin\Debug\Entidades.dll
+E:\FACU\Laborartorio_2\TP-02\TP-02\bin\Debug\Entidades.pdb
+C:\TP-02\TP-02\bin\Debug\TP-02.exe.config
+C:\TP-02\TP-02\bin\Debug\TP-02.exe
+C:\TP-02\TP-02\bin\Debug\TP-02.pdb
+C:\TP-02\TP-02\bin\Debug\Entidades.dll
+C:\TP-02\TP-02\bin\Debug\Entidades.pdb
+C:\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+C:\TP-02\TP-02\obj\Debug\TP-02.exe
+C:\TP-02\TP-02\obj\Debug\TP-02.pdb
