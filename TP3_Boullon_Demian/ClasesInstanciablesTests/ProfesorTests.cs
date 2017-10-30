@@ -17,12 +17,12 @@ namespace ClasesInstanciables.Tests
         {
             try
             {
-                Profesor profesor = new Profesor(1, "Demian", "Boullon", "0", Persona.ENacionalidad.Argentino);                
+                Profesor profesor = new Profesor(1, "Demian", "Boullon", "0", Persona.ENacionalidad.Argentino);
             }
-            catch(Exception excepcion)
-            {                
+            catch (Exception excepcion)
+            {
                 Assert.IsInstanceOfType(excepcion, typeof(DniInvalidoException));
-            }            
+            }
 
         }
 
@@ -32,7 +32,7 @@ namespace ClasesInstanciables.Tests
             try
             {
                 Profesor profesor = new Profesor(1, "Demian", "Boullon", "1", Persona.ENacionalidad.Extranjero);
-                //Profesor profesor2 = new Profesor(1, "Demian", "Boullon", "89999999", Persona.ENacionalidad.Extranjero);
+                Profesor profesor2 = new Profesor(1, "Demian", "Boullon", "89999999", Persona.ENacionalidad.Extranjero);
             }
             catch (Exception excepcion)
             {
@@ -41,11 +41,18 @@ namespace ClasesInstanciables.Tests
 
         }
 
-        //[TestMethod()]
-        //public void ToStringTest()
-        //{
-        //    Assert.Fail();
-        //}
+        [TestMethod()]
+        public void ToStringTest()
+        {
+            try
+            {
+                Profesor profesor2 = new Profesor(1, "Demian", "Boullon", "899A99999", Persona.ENacionalidad.Argentino);
+            }
+            catch (Exception excepcion)
+            {
+                Assert.IsInstanceOfType(excepcion, typeof(DniInvalidoException));
+            }
+        }
 
         //[TestMethod()]
         //public void EqualsTest()

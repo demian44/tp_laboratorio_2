@@ -51,7 +51,7 @@ namespace ClasesInstanciables
         {
             get
             {
-                if ( i < this._jornada.Count && i >= 0)
+                if (i < this._jornada.Count && i >= 0)
                     return this._jornada[i];
                 else
                     return null;
@@ -70,10 +70,11 @@ namespace ClasesInstanciables
 
         public Universidad()
         {
-            this._alumnos = new List<Alumno>();
-            this._jornada = new List<Jornada>();
-            this._profesores = new List<Profesor>();
+            this.Alumnos = new List<Alumno>();
+            this.Jornadas = new List<Jornada>();
+            this.Instructores = new List<Profesor>();
         }
+                
 
         public static bool Guardar(Universidad gim)
         {
@@ -147,14 +148,10 @@ namespace ClasesInstanciables
         {
             if (!ReferenceEquals(null, g) && !ReferenceEquals(g, null))
             {
-                if (g != a)
-                {
-                    g._alumnos.Add(a);
-                }
-                else
-                {
-                    throw new AlumnoRepetidoException();
-                }
+                if (g != a)                
+                    g._alumnos.Add(a);                
+                else                
+                    throw new AlumnoRepetidoException();                
             }
             else
                 throw new Exception("Referencia nula");
@@ -174,6 +171,7 @@ namespace ClasesInstanciables
                     if (prof == clase)
                     {
                         jornada = new Jornada(clase, prof);
+                        g._profesores.Remove(prof);
                         foreach (Alumno alumno in g._alumnos)
                         {
                             if (alumno == clase)
@@ -194,13 +192,18 @@ namespace ClasesInstanciables
 
         public static Universidad operator +(Universidad g, Profesor profesor)
         {
-
-            if (g != profesor)
-                g.Instructores.Add(profesor);
+            if (ReferenceEquals(null, profesor) || ReferenceEquals(null,g))
+                throw new NullReferenceException("Profesor no instanciado.");
+            else
+            {
+                if (g != profesor)
+                    g.Instructores.Add(profesor);                                
+                    
+            }
+                
 
             return g;
         }
-
 
         public override string ToString()
         {
@@ -214,6 +217,6 @@ namespace ClasesInstanciables
         }
         #endregion
 
-        public enum EClases { Programacion, Laboratorio, SPD, Legislacion }
+        public enum EClases { Programacion, Laboratorio, Legislacion, SPD }
     }
 }

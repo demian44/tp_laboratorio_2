@@ -73,7 +73,7 @@ namespace ClasesInstanciables
 
         public static bool operator ==(Jornada j, Alumno a)
         {
-            if (j._alumno.Contains(a))
+            if (j._alumno.Contains(a) && j.Instructor.Dni!=a.Dni)
                 return true;
             return false;
         }
@@ -110,6 +110,8 @@ namespace ClasesInstanciables
                 }
                 stringBuilder.AppendLine(alumno.ToString());
             }
+            if(flag)
+                stringBuilder.AppendLine("SIN ALUMNOS");
             return stringBuilder.ToString();
         }
     }

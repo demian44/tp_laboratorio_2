@@ -14,24 +14,29 @@ namespace Archivos
     {
 
         public bool Guardar(string archivo, T datos)
-        {         
-            bool returnAux = false;
-            XmlTextWriter fl = new XmlTextWriter(archivo, System.Text.Encoding.UTF8);
-            try
+        {
+            bool retorno = false;
+            if (ReferenceEquals(datos, null))
+                throw new NullReferenceException();
+            else
             {
-                if (!object.ReferenceEquals(fl, null))
+                try
                 {
-                    XmlSerializer ser = new XmlSerializer(typeof(T));
-                    ser.Serialize(fl, datos);
-                    returnAux = true;
+                    
+                    StreamWriter streamWriter = new StreamWriter(archivo);
+                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
+                    xmlSerializer.Serialize(streamWriter, datos);
+                    streamWriter.Close();
+                    retorno = true;
                 }
-            }
-            catch(Exception exception)
-            {
-                throw new ArchivosException(exception);
-            }
+                catch (Exception exception)
+                {
+                    throw new ArchivosException(exception);
+                }
 
-            return returnAux;
+            }        
+
+            return retorno;
         }
 
 

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace ClasesInstanciables
 {
@@ -15,80 +16,90 @@ namespace ClasesInstanciables
      * mediante el método randomClases. Las dos clases pueden o no ser la misma.
      *  Un Profesor será igual a un EClase si da esa clase.
      */
-
+    [Serializable]
     public class Profesor : Universitario
     {
-        public Queue<Universidad.EClases> _clasesDelDia;
-        static private Random _random;
+        protected Queue<Universidad.EClases> _clasesDelDia;
+        protected static Random _random;
 
-        protected override string ParticiparEnClase()
-        {
-            string retorno =  "\nCLASES DEL DIA:";
-            foreach(Universidad.EClases clase in this._clasesDelDia)
-            {
-                retorno += string.Format(" {0}\n", clase.ToString());
-            }
-            return retorno;
-        }
+        public Profesor() { }
 
-        private void _randomClases()
-        {
-            if (_random.Next(0, 2) == 0)
-                this._clasesDelDia.Enqueue(Universidad.EClases.Laboratorio);
-            else 
-                this._clasesDelDia.Enqueue(Universidad.EClases.Programacion);
-           
-        }
-
-        public static bool operator ==(Profesor i, Universidad.EClases clase)
-        {
-            Boolean retorno = false;
-            if (!ReferenceEquals(i, null))
-            {
-                foreach (Universidad.EClases clase2 in i._clasesDelDia)
-                    if (clase2 == clase)
-                        return true;
-            }
-            return retorno;
-        }
-
-        public static bool operator !=(Profesor i, Universidad.EClases clase)
-        {
-            return !(i == clase);
-        }
-
-        public Profesor() : base()
-        {
-            this._clasesDelDia = new Queue<Universidad.EClases>();
-            this._randomClases();
-            this._randomClases();
-        }
 
         static Profesor()
         {
             _random = new Random();
         }
 
-        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(id, nombre, apellido, dni, nacionalidad)
+
+        public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
+            : base(id, nombre, apellido, dni, nacionalidad)
         {
             this._clasesDelDia = new Queue<Universidad.EClases>();
             this._randomClases();
             this._randomClases();
         }
 
-        public override string ToString()
+
+        protected override string ParticiparEnClase()
         {
-            return base.MostrarDatos() + this.ParticiparEnClase();
-        }
-        
-        public override bool Equals(object obj)
-        {
-            return base.Equals(obj);
+            string retorno = "\nCLASES DEL DIA:";
+            foreach (Universidad.EClases clase in this._clasesDelDia)
+            {
+                retorno += string.Format(" {0}\n", clase.ToString());
+            }
+            return retorno;
         }
 
-        public override int GetHashCode()
+        protected override string MostrarDatos()
         {
-            return base.GetHashCode();
+            return string.Format("{0} {1}", base.MostrarDatos(), this.ParticiparEnClase());
+        }
+
+
+        private void _randomClases()
+        {
+            int aux = _random.Next(0, 3);
+            if(aux == 0)
+                this._clasesDelDia.Enqueue(Universidad.EClases.Laboratorio);
+            else if (aux == 1)
+                this._clasesDelDia.Enqueue(Universidad.EClases.Programacion);
+            else if (aux == 2)
+                this._clasesDelDia.Enqueue(Universidad.EClases.Legislacion);
+            else 
+                this._clasesDelDia.Enqueue(Universidad.EClases.SPD);
+        }
+
+
+        public static bool operator ==(Profesor p, Universidad.EClases c)
+        {
+            bool returnAux = false;
+            if (!object.ReferenceEquals(p, null) && !object.ReferenceEquals(c, null))
+            {
+                foreach (Universidad.EClases element in p._clasesDelDia)
+                {
+                    if (element == c)
+                    {
+                        returnAux = true;
+                    }
+                }
+            }
+            else
+                throw new Exception();
+
+            return returnAux;
+        }
+                
+        public static bool operator !=(Profesor p, Universidad.EClases clase)
+        {
+            bool returnAux = true;
+            if (p == clase)            
+                returnAux = false;            
+            return returnAux;
+        }
+
+        public override string ToString()
+        {
+            return this.MostrarDatos();
         }
 
     }
