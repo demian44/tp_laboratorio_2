@@ -35,10 +35,9 @@ namespace ClasesInstanciables
         {
             if (_random.Next(0, 2) == 0)
                 this._clasesDelDia.Enqueue(Universidad.EClases.Laboratorio);
-            else if (_random.Next(0, 2) == 1)
+            else 
                 this._clasesDelDia.Enqueue(Universidad.EClases.Programacion);
-            else
-                this._clasesDelDia.Enqueue(Universidad.EClases.SPD);
+           
         }
 
         public static bool operator ==(Profesor i, Universidad.EClases clase)

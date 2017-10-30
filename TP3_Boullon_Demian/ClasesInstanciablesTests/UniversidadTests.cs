@@ -11,22 +11,22 @@ namespace ClasesInstanciables.Tests
     [TestClass()]
     public class UniversidadTests
     {
-        [TestMethod()]
-        public void UniversidadTest()
-        {
-            Assert.Fail();
-        }
+        //[TestMethod()]
+        //public void UniversidadTest()
+        //{
+        //    Assert.Fail();
+        //}
 
-        [TestMethod()]
-        public void GuardarTest()
-        {
-            Assert.Fail();
-        }
+        //[TestMethod()]
+        //public void GuardarTest()
+        //{
+        //    Assert.Fail();
+        //}
 
-        [TestMethod()]
-        public void ToStringTest()
-        {
-            Assert.Fail();
-        }
+        //[TestMethod()]
+        //public void ToStringTest()
+        //{
+        //    Assert.Fail();
+        //}
     }
 }

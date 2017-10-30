@@ -61,12 +61,12 @@ namespace EntidadesAbstractas
         public int Dni
         {
             get
-            {                
+            {
                 return this._dni;
             }
             set
             {
-                this._dni = ValidarDni(this._nacionalidad,value);
+                this._dni = ValidarDni(this._nacionalidad, value);
             }
         }
 
@@ -105,9 +105,8 @@ namespace EntidadesAbstractas
 
         public Persona(String nombre, String apellido, String dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
-            int aux = 0;
-            if (int.TryParse(dni, out aux) && ValidarDni(nacionalidad, aux) != 0)
-                this._dni = aux;
+
+            this._dni = ValidarDni(nacionalidad, dni);
         }
 
         /// <summary>
@@ -121,9 +120,9 @@ namespace EntidadesAbstractas
             bool retorno = true;
             foreach (char caracter in text)
             {
-                if (!char.IsLetter(caracter))                
+                if (!char.IsLetter(caracter))
                     throw new Exception("Se ingresaron caracteres invalidos.");
-                
+
             }
             return retorno;
         }
@@ -135,15 +134,15 @@ namespace EntidadesAbstractas
         /// <returns></returns>
         private static int ValidarDni(ENacionalidad nacionalidad, int dni)
         {
-            int retorno = 0;
+            int retorno;
 
-            if (dni < 1 || dni > 89999999 && nacionalidad == ENacionalidad.Argentino)
-                throw new DniInvalidoException("Valor invalido.");            
-            else if (dni > 1 && dni < 89999999 && nacionalidad != ENacionalidad.Argentino)            
-                throw new NacionalidadInvalidaException(" Numero opNacionalidad incorrecta");            
-            else            
+            if ((dni < 1 || dni > 89999999) && nacionalidad == ENacionalidad.Argentino)
+                throw new DniInvalidoException("Valor invalido.");
+            else if ((dni > 0 && dni <= 89999999) && nacionalidad == ENacionalidad.Extranjero)
+                throw new NacionalidadInvalidaException(" Numero opNacionalidad incorrecta");
+            else
                 retorno = dni;
-            
+
             return retorno;
         }
 
@@ -155,15 +154,9 @@ namespace EntidadesAbstractas
         private int ValidarDni(ENacionalidad nacionalidad, string dni)
         {
             int aux = 0;
-            if (nacionalidad == ENacionalidad.Argentino)
-            {
-                if (!int.TryParse(dni, out aux))
-                    throw (new DniInvalidoException("Se ingresaron caracteres invalidos."));
-                if (aux < 1 || aux > 89999999)
-                    throw (new DniInvalidoException("Fuera de rango."));
-            }
-
-            return aux;
+            if (!int.TryParse(dni, out aux))
+                throw (new DniInvalidoException("Se ingresaron caracteres invalidos."));
+            return (aux = ValidarDni(nacionalidad, aux));
         }
 
         /// <summary>

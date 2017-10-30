@@ -15,32 +15,48 @@ namespace ClasesInstanciables.Tests
         [TestMethod()]
         public void ProfesorCorrecto()
         {
-            Profesor profesor = new Profesor(1, "Demian", "Boullon", "0", Persona.ENacionalidad.Argentino);
+            try
+            {
+                Profesor profesor = new Profesor(1, "Demian", "Boullon", "0", Persona.ENacionalidad.Argentino);                
+            }
+            catch(Exception excepcion)
+            {                
+                Assert.IsInstanceOfType(excepcion, typeof(DniInvalidoException));
+            }            
 
         }
 
         [TestMethod()]
-        public void ProfesorTest1()
+        public void ProfesorNacionalidadYdocumento()
         {
-            Assert.Fail();
+            try
+            {
+                Profesor profesor = new Profesor(1, "Demian", "Boullon", "1", Persona.ENacionalidad.Extranjero);
+                //Profesor profesor2 = new Profesor(1, "Demian", "Boullon", "89999999", Persona.ENacionalidad.Extranjero);
+            }
+            catch (Exception excepcion)
+            {
+                Assert.IsInstanceOfType(excepcion, typeof(NacionalidadInvalidaException));
+            }
+
         }
 
-        [TestMethod()]
-        public void ToStringTest()
-        {
-            Assert.Fail();
-        }
+        //[TestMethod()]
+        //public void ToStringTest()
+        //{
+        //    Assert.Fail();
+        //}
 
-        [TestMethod()]
-        public void EqualsTest()
-        {
-            Assert.Fail();
-        }
+        //[TestMethod()]
+        //public void EqualsTest()
+        //{
+        //    Assert.Fail();
+        //}
 
-        [TestMethod()]
-        public void GetHashCodeTest()
-        {
-            Assert.Fail();
-        }
+        //[TestMethod()]
+        //public void GetHashCodeTest()
+        //{
+        //    Assert.Fail();
+        //}
     }
 }

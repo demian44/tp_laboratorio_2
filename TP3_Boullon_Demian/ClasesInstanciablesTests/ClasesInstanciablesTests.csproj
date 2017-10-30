@@ -71,6 +71,10 @@
       <Project>{7D9C02D7-BB9D-476D-9590-C1FCF13DB69C}</Project>
       <Name>ClasesAbstractas</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{b653db08-c8fe-4f1a-b6ab-5a587bbf81b0}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

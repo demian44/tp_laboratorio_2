@@ -87,7 +87,7 @@ namespace ClasesInstanciables
         {
             if(!ReferenceEquals(null,j) && !ReferenceEquals(null,a))
             {
-                if (!j._alumno.Contains(a))
+                if (j!=a)
                     j._alumno.Add(a);
                 else
                     throw new AlumnoRepetidoException();
