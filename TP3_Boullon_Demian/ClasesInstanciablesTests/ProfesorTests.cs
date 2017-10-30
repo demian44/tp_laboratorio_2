@@ -18,6 +18,7 @@ namespace ClasesInstanciables.Tests
             try
             {
                 Profesor profesor = new Profesor(1, "Demian", "Boullon", "0", Persona.ENacionalidad.Argentino);
+                Assert.Fail("No debe ingresar valores inferiores a 1.");
             }
             catch (Exception excepcion)
             {
@@ -27,12 +28,12 @@ namespace ClasesInstanciables.Tests
         }
 
         [TestMethod()]
-        public void ProfesorNacionalidadYdocumento()
+        public void ProfesorNacionalidadYdocumento2()
         {
             try
             {
-                Profesor profesor = new Profesor(1, "Demian", "Boullon", "1", Persona.ENacionalidad.Extranjero);
-                Profesor profesor2 = new Profesor(1, "Demian", "Boullon", "89999999", Persona.ENacionalidad.Extranjero);
+                Profesor profesor2 = new Profesor(1, "Demian", "Boullon", "90000000", Persona.ENacionalidad.Argentino);
+                Assert.Fail("Debe estar ser 900000000 o mayor");
             }
             catch (Exception excepcion)
             {
@@ -40,6 +41,7 @@ namespace ClasesInstanciables.Tests
             }
 
         }
+                      
 
         [TestMethod()]
         public void ToStringTest()
@@ -47,6 +49,7 @@ namespace ClasesInstanciables.Tests
             try
             {
                 Profesor profesor2 = new Profesor(1, "Demian", "Boullon", "899A99999", Persona.ENacionalidad.Argentino);
+                Assert.Fail("No debe permitir el ingreso de letras.");
             }
             catch (Exception excepcion)
             {

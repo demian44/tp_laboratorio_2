@@ -71,10 +71,72 @@ namespace EntidadesAbstractas
         }
 
         #endregion
+        
+        #region Metodos      
+
+        /// <summary>
+        /// Recorre la cadena de caracteres en busca de un elemento que no sea una letra.
+        /// En caso de encontrar dicho elemento retorna false, caso contrario, true.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        private bool OnlyLetters(string text)
+        {
+            bool retorno = true;
+            foreach (char caracter in text)
+            {
+                if (!char.IsLetter(caracter))
+                    throw new Exception("Se ingresaron caracteres invalidos.");
+
+            }
+            return retorno;
+        }
+
+        /// <summary>
+        /// Valida que el dni esté entre 1 y 89999999.
+        /// </summary>
+        /// <param name="dni"></param>
+        /// <returns></returns>
+        private static int ValidarDni(ENacionalidad nacionalidad, int dni)
+        {
+            int retorno;
+
+            if ((dni < 1 || dni > 89999999) && nacionalidad == ENacionalidad.Argentino)
+                throw new DniInvalidoException("Valor invalido.");
+            else if ((dni > 0 && dni <= 89999999) && nacionalidad == ENacionalidad.Extranjero)
+                throw new NacionalidadInvalidaException();
+            else
+                retorno = dni;
+
+            return retorno;
+        }
+
+        /// <summary>
+        /// Valida que el dni esté entre 1 y 89999999.
+        /// </summary>
+        /// <param name="dni"></param>
+        /// <returns></returns>
+        private int ValidarDni(ENacionalidad nacionalidad, string dni)
+        {
+            int aux = 0;
+            if (!int.TryParse(dni, out aux))
+                throw (new DniInvalidoException("Se ingresaron caracteres invalidos."));
+            return (aux = ValidarDni(nacionalidad, aux));
+        }
+
+        /// <summary>
+        /// Devuelve nombre, apellido, nacionalidad y DNI (Uno por renglon).
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return String.Format("NOMBRE COMPLETO: {0}, {1}\nNacionalidad: {2}\n", this._apellido, this._nombre, this._nacionalidad.ToString());
+        }
 
 
-        #region Metodos
+        #endregion
 
+        #region Constructors
         public Persona()
         {
             this._nombre = "";
@@ -108,67 +170,6 @@ namespace EntidadesAbstractas
 
             this._dni = ValidarDni(nacionalidad, dni);
         }
-
-        /// <summary>
-        /// Recorre la cadena de caracteres en busca de un elemento que no sea una letra.
-        /// En caso de encontrar dicho elemento retorna false, caso contrario, true.
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        private bool OnlyLetters(string text)
-        {
-            bool retorno = true;
-            foreach (char caracter in text)
-            {
-                if (!char.IsLetter(caracter))
-                    throw new Exception("Se ingresaron caracteres invalidos.");
-
-            }
-            return retorno;
-        }
-
-        /// <summary>
-        /// Valida que el dni esté entre 1 y 89999999.
-        /// </summary>
-        /// <param name="dni"></param>
-        /// <returns></returns>
-        private static int ValidarDni(ENacionalidad nacionalidad, int dni)
-        {
-            int retorno;
-
-            if ((dni < 1 || dni > 89999999) && nacionalidad == ENacionalidad.Argentino)
-                throw new DniInvalidoException("Valor invalido.");
-            else if ((dni > 0 && dni <= 89999999) && nacionalidad == ENacionalidad.Extranjero)
-                throw new NacionalidadInvalidaException(" Numero opNacionalidad incorrecta");
-            else
-                retorno = dni;
-
-            return retorno;
-        }
-
-        /// <summary>
-        /// Valida que el dni esté entre 1 y 89999999.
-        /// </summary>
-        /// <param name="dni"></param>
-        /// <returns></returns>
-        private int ValidarDni(ENacionalidad nacionalidad, string dni)
-        {
-            int aux = 0;
-            if (!int.TryParse(dni, out aux))
-                throw (new DniInvalidoException("Se ingresaron caracteres invalidos."));
-            return (aux = ValidarDni(nacionalidad, aux));
-        }
-
-        /// <summary>
-        /// Devuelve nombre, apellido, nacionalidad y DNI (Uno por renglon).
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            return String.Format("NOMBRE COMPLETO: {0}, {1}\nNacionalidad: {2}\n", this._apellido, this._nombre, this._nacionalidad.ToString());
-        }
-
-
         #endregion
     }
 }

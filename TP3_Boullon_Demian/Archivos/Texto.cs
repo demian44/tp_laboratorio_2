@@ -8,8 +8,19 @@ using System.Threading.Tasks;
 
 namespace Archivos
 {
+    /// <summary>
+    /// Clase que permite leer y guardar archivos de texto mediante un objeto
+    /// definido al memento de instanciar esta clase.
+    /// </summary>
     public class Texto : IArchivo<string>
     {
+        #region Methods
+        /// <summary>
+        /// Permite guardar un string en un archivo txt.
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, string datos)
         {
             bool returnAux = false;
@@ -28,7 +39,13 @@ namespace Archivos
             return returnAux;
         }
 
-
+        /// <summary>
+        /// Permite traer informacion de un archivo de texto plano dentro
+        /// de un string.
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out string datos)
         {
             bool retorno = false;
@@ -45,6 +62,7 @@ namespace Archivos
 
             return retorno;
         }
-    }      
+        #endregion
+    }
 
 }

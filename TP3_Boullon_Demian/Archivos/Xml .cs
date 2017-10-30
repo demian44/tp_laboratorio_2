@@ -12,7 +12,14 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
-
+        #region methos
+        /// <summary>
+        /// Permite serialziar una clase cualquiera dentro de un archivo
+        /// .xml
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, T datos)
         {
             bool retorno = false;
@@ -40,6 +47,12 @@ namespace Archivos
         }
 
 
+        /// <summary>
+        /// Permite des serialziar un archivo dentro de una clase siempre        
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out T datos)
         {
             bool retorno = false;            
@@ -59,5 +72,6 @@ namespace Archivos
 
             return retorno;
         }
+        #endregion 
     }
 }

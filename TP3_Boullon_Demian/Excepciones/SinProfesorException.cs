@@ -9,9 +9,7 @@ namespace EntidadesAbstractas
     public class SinProfesorException : Exception
     {
         public SinProfesorException()
-            : base("No se introdujo ningun profesor")
-        {
+            : base("No se introdujo ningun profesor") { }
 
-        }
     }         
 }

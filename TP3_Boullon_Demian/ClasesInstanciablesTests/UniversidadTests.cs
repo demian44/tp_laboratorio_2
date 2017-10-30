@@ -38,19 +38,6 @@ namespace ClasesInstanciables.Tests
             universidadInstanciada += profesorB;
             if (1 == universidadInstanciada.Instructores.Count())
                 Assert.Fail("Sin excepcion para profesor repetido");
-
         }
-
-        //[TestMethod()]
-        //public void GuardarTest()
-        //{
-        //    Assert.Fail();
-        //}
-
-        //[TestMethod()]
-        //public void ToStringTest()
-        //{
-        //    Assert.Fail();
-        //}
     }
 }

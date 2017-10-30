@@ -15,8 +15,33 @@ namespace EntidadesAbstractas
     public abstract class Universitario : Persona
     {
         private int _legajo;
+        #region Methods      
+        /// <summary>
+        /// Muestra los datos de la persona universitaria.
+        /// </summary>
+        /// <returns></returns>
+        protected virtual string MostrarDatos()
+        {
+            return (base.ToString() + "\n\nLEGAJO NUMERO: " + this._legajo.ToString());
+        }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        #endregion
 
+        #region Operators
+        public static bool operator !=(Universitario pg1, Universitario pg2)
+        {
+            return !(pg1 == pg2);
+        }
+
+        /// <summary>
+        /// Establece si un objeto es del tipo universitario.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             if (obj is Universitario)
@@ -26,21 +51,7 @@ namespace EntidadesAbstractas
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        protected virtual string MostrarDatos()
-        {
-            return (base.ToString() + "\n\nLEGAJO NUMERO: " + this._legajo.ToString());
-        }
-
-        public static bool operator !=(Universitario pg1, Universitario pg2)
-        {
-            return !(pg1 == pg2);
-        }
-
-        /// <summary>
-        /// Compara dos personas por el legajo
+        /// Compara dos personas por el legajo.
         /// </summary>
         /// <param name="pg1"></param>
         /// <param name="pg2"></param>
@@ -54,23 +65,23 @@ namespace EntidadesAbstractas
                     retorno = true;
             }
 
-            return retorno;             
+            return retorno;
         }
-        protected  abstract string ParticiparEnClase();
+        #endregion
 
+        #region Abstract Class
+        protected abstract string ParticiparEnClase();
+        #endregion
+
+        #region Constructors
         public Universitario()
         {
             this._legajo = 0;
         }
-        public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(nombre, apellido,dni,nacionalidad)
+        public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(nombre, apellido, dni, nacionalidad)
         {
             this._legajo = legajo;
         }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();  
-        }
-
+        #endregion
     }
 }

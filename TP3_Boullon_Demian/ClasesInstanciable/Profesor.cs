@@ -5,25 +5,15 @@ using System.IO;
 using System.Text;
 
 namespace ClasesInstanciables
-{
-    /*
-     *  Atributos ClasesDelDia del tipo Cola y random del tipo Random y estático.
-     *  Sobrescribir el método MostrarDatos con todos los datos del profesor.
-     *  ParticiparEnClase retornará la cadena "CLASES DEL DÍA " junto al nombre de la clases que da.
-     *  ToString hará públicos los datos del Profesor.
-     *  Se inicializará a Random sólo en un constructor.
-     *  En el constructor de instancia se inicializará ClasesDelDia y se asignarán dos clases al azar al Profesor
-     * mediante el método randomClases. Las dos clases pueden o no ser la misma.
-     *  Un Profesor será igual a un EClase si da esa clase.
-     */
+{   
     [Serializable]
     public class Profesor : Universitario
     {
         protected Queue<Universidad.EClases> _clasesDelDia;
         protected static Random _random;
 
+        #region Constructors
         public Profesor() { }
-
 
         static Profesor()
         {
@@ -38,8 +28,13 @@ namespace ClasesInstanciables
             this._randomClases();
             this._randomClases();
         }
+        #endregion
 
-
+        #region Methods
+        /// <summary>
+        /// COmunica la clase en la cual es responsable.
+        /// </summary>
+        /// <returns></returns>
         protected override string ParticiparEnClase()
         {
             string retorno = "\nCLASES DEL DIA:";
@@ -50,26 +45,42 @@ namespace ClasesInstanciables
             return retorno;
         }
 
+        /// <summary>
+        /// Muestra la informacion.
+        /// </summary>
+        /// <returns></returns>
         protected override string MostrarDatos()
         {
             return string.Format("{0} {1}", base.MostrarDatos(), this.ParticiparEnClase());
         }
 
-
+        /// <summary>
+        /// Define una clase para la jornada mediante la clase Random
+        /// </summary>
         private void _randomClases()
         {
             int aux = _random.Next(0, 3);
-            if(aux == 0)
+            if (aux == 0)
                 this._clasesDelDia.Enqueue(Universidad.EClases.Laboratorio);
             else if (aux == 1)
                 this._clasesDelDia.Enqueue(Universidad.EClases.Programacion);
             else if (aux == 2)
                 this._clasesDelDia.Enqueue(Universidad.EClases.Legislacion);
-            else 
+            else
                 this._clasesDelDia.Enqueue(Universidad.EClases.SPD);
         }
 
+        /// <summary>
+        /// Muestra los datos.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return this.MostrarDatos();
+        }
+        #endregion
 
+        #region Operators
         public static bool operator ==(Profesor p, Universidad.EClases c)
         {
             bool returnAux = false;
@@ -88,19 +99,15 @@ namespace ClasesInstanciables
 
             return returnAux;
         }
-                
+
         public static bool operator !=(Profesor p, Universidad.EClases clase)
         {
             bool returnAux = true;
-            if (p == clase)            
-                returnAux = false;            
+            if (p == clase)
+                returnAux = false;
             return returnAux;
         }
-
-        public override string ToString()
-        {
-            return this.MostrarDatos();
-        }
-
+        #endregion
+       
     }
 }

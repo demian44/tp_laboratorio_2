@@ -66,7 +66,7 @@ namespace ClasesInstanciables
         }
         #endregion
 
-        #region Methods
+        #region Constructors
 
         public Universidad()
         {
@@ -74,8 +74,14 @@ namespace ClasesInstanciables
             this.Jornadas = new List<Jornada>();
             this.Instructores = new List<Profesor>();
         }
-                
+        #endregion
 
+        #region Methods
+        /// <summary>
+        /// Guarda a la universidad en un archivo xml.
+        /// </summary>
+        /// <param name="gim"></param>
+        /// <returns></returns>
         public static bool Guardar(Universidad gim)
         {
             string nomArchivo = "Universidad.xml";
@@ -84,6 +90,11 @@ namespace ClasesInstanciables
             return returnAux;
         }
 
+        /// <summary>
+        /// Muestra los datos de la universidad.
+        /// </summary>
+        /// <param name="gim"></param>
+        /// <returns></returns>
         private bool MostrarDatos(Universidad gim)
         {
             bool retorno = false;
@@ -96,6 +107,24 @@ namespace ClasesInstanciables
             return retorno;
         }
 
+        /// <summary>
+        /// Devuelve la informacion perteneciente a las jornadas de la universidad.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (Jornada jornada in this._jornada)
+            {
+                stringBuilder.AppendLine(jornada.ToString());
+            }
+
+            return stringBuilder.ToString();
+        }
+
+        #endregion
+
+        #region Operators
         public static bool operator ==(Universidad g, Alumno a)
         {
             if (!ReferenceEquals(null, g) && !ReferenceEquals(null, a))
@@ -199,22 +228,11 @@ namespace ClasesInstanciables
                 if (g != profesor)
                     g.Instructores.Add(profesor);                                
                     
-            }
-                
+            }               
 
             return g;
         }
-
-        public override string ToString()
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Jornada jornada in this._jornada)
-            {
-                stringBuilder.AppendLine(jornada.ToString());
-            }
-
-            return stringBuilder.ToString();
-        }
+        
         #endregion
 
         public enum EClases { Programacion, Laboratorio, Legislacion, SPD }

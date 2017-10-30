@@ -8,7 +8,7 @@ namespace EntidadesAbstractas
 {
     public class AlumnoRepetidoException : Exception
     {
-        public AlumnoRepetidoException() : base("Alumno repedito.")
-        { }
+        public AlumnoRepetidoException()
+            : base("Alumno repedito.") { }
     }
 }
