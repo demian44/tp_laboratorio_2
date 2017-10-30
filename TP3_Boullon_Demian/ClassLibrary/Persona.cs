@@ -60,8 +60,14 @@ namespace EntidadesAbstractas
 
         public int Dni
         {
-            get { return this._dni; }
-            set { this._dni = value; }
+            get
+            {                
+                return this._dni;
+            }
+            set
+            {
+                this._dni = ValidarDni(this._nacionalidad,value);
+            }
         }
 
         #endregion
@@ -91,7 +97,7 @@ namespace EntidadesAbstractas
             }
             catch
             {
-                throw new DniInvalidoException("asd");
+                throw new DniInvalidoException("DNI invalido.");
             }
 
 
@@ -115,11 +121,9 @@ namespace EntidadesAbstractas
             bool retorno = true;
             foreach (char caracter in text)
             {
-                if (!char.IsLetter(caracter))
-                {
-                    retorno = false;
-                    break;
-                }
+                if (!char.IsLetter(caracter))                
+                    throw new Exception("Se ingresaron caracteres invalidos.");
+                
             }
             return retorno;
         }
