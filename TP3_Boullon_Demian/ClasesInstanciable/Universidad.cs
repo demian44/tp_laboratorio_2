@@ -20,7 +20,7 @@ namespace ClasesInstanciables
      *  Leer de clase retornará un Universidad con todos los datos previamente serializados.
      * Archivos:
      */
-
+    [Serializable]
     public class Universidad
     {
         private List<Alumno> _alumnos;
@@ -51,7 +51,7 @@ namespace ClasesInstanciables
         {
             get
             {
-                if (this._jornada.Count < i && i >= 0)
+                if ( i < this._jornada.Count && i >= 0)
                     return this._jornada[i];
                 else
                     return null;

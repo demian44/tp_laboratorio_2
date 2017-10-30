@@ -12,8 +12,9 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
+
         public bool Guardar(string archivo, T datos)
-        {
+        {         
             bool returnAux = false;
             XmlTextWriter fl = new XmlTextWriter(archivo, System.Text.Encoding.UTF8);
             try

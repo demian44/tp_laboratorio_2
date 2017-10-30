@@ -12,3 +12,5 @@ E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Archivos\obj\Debug\Archivos
 E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
 E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Archivos\bin\Debug\Excepciones.dll
 E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Archivos\bin\Debug\Excepciones.pdb
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Archivos\bin\Debug\ClassLibrary.dll
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Archivos\bin\Debug\ClassLibrary.pdb
