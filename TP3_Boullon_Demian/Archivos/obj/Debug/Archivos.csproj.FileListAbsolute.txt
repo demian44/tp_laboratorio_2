@@ -1,0 +1,6 @@
+E:\Laboratorio_2\TP3_Boullon_Demian\Archivos\bin\Debug\Archivos.dll
+E:\Laboratorio_2\TP3_Boullon_Demian\Archivos\bin\Debug\Archivos.pdb
+E:\Laboratorio_2\TP3_Boullon_Demian\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+E:\Laboratorio_2\TP3_Boullon_Demian\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+E:\Laboratorio_2\TP3_Boullon_Demian\Archivos\obj\Debug\Archivos.dll
+E:\Laboratorio_2\TP3_Boullon_Demian\Archivos\obj\Debug\Archivos.pdb

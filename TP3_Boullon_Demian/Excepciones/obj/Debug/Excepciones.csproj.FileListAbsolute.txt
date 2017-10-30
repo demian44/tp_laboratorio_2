@@ -1,0 +1,12 @@
+E:\Laboratorio_2\TP3_Boullon_Demian\Excepciones\bin\Debug\Excepciones.dll
+E:\Laboratorio_2\TP3_Boullon_Demian\Excepciones\bin\Debug\Excepciones.pdb
+E:\Laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.csprojResolveAssemblyReference.cache
+E:\Laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+E:\Laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.dll
+E:\Laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.pdb
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Excepciones\bin\Debug\Excepciones.dll
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Excepciones\bin\Debug\Excepciones.pdb
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.csprojResolveAssemblyReference.cache
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.dll
+E:\Laboratorio_2\tp_laboratorio_2\TP3_Boullon_Demian\Excepciones\obj\Debug\Excepciones.pdb
