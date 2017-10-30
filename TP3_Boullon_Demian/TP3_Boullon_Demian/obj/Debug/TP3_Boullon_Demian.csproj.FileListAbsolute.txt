@@ -1,7 +1,0 @@
-E:\Laboratorio_2\TP3_Boullon_Demian\TP3_Boullon_Demian\bin\Debug\TP3_Boullon_Demian.exe.config
-E:\Laboratorio_2\TP3_Boullon_Demian\TP3_Boullon_Demian\bin\Debug\TP3_Boullon_Demian.exe
-E:\Laboratorio_2\TP3_Boullon_Demian\TP3_Boullon_Demian\bin\Debug\TP3_Boullon_Demian.pdb
-E:\Laboratorio_2\TP3_Boullon_Demian\TP3_Boullon_Demian\obj\Debug\TP3_Boullon_Demian.csprojResolveAssemblyReference.cache
-E:\Laboratorio_2\TP3_Boullon_Demian\TP3_Boullon_Demian\obj\Debug\TP3_Boullon_Demian.csproj.CoreCompileInputs.cache
-E:\Laboratorio_2\TP3_Boullon_Demian\TP3_Boullon_Demian\obj\Debug\TP3_Boullon_Demian.exe
-E:\Laboratorio_2\TP3_Boullon_Demian\TP3_Boullon_Demian\obj\Debug\TP3_Boullon_Demian.pdb

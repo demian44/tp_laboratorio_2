@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntidadesAbstractas;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,16 +14,26 @@ namespace Archivos
     {
         public bool Guardar(string archivo, T datos)
         {
-            bool retorno = false;                 
-            if(archivo != String.Empty)
+            bool returnAux = false;
+            XmlTextWriter fl = new XmlTextWriter(archivo, System.Text.Encoding.UTF8);
+            try
             {
-                XmlSerializer xmlSerializer;
-                XmlTextWriter xmlWriter = new XmlTextWriter(archivo, Encoding.ASCII);
-                xmlSerializer = new XmlSerializer(typeof(T));
-                retorno = true;
+                if (!object.ReferenceEquals(fl, null))
+                {
+                    XmlSerializer ser = new XmlSerializer(typeof(T));
+                    ser.Serialize(fl, datos);
+                    returnAux = true;
+                }
             }
-            return retorno;
+            catch(Exception exception)
+            {
+                throw new ArchivosException(exception);
+            }
+
+            return returnAux;
         }
+
+
         public bool Leer(string archivo, out T datos)
         {
             bool retorno = false;            

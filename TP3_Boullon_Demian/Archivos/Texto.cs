@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntidadesAbstractas;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,18 +12,22 @@ namespace Archivos
     {
         public bool Guardar(string archivo, string datos)
         {
-            bool retorno = false;
-            StreamWriter streamWriter;
-            if (!File.Exists(archivo))
+            bool returnAux = false;
+            StreamWriter text = new StreamWriter(archivo);
+            if (!object.ReferenceEquals(text, null) && !object.ReferenceEquals(datos, null))
             {
-                streamWriter = new StreamWriter(archivo);
-                streamWriter.Write(datos);
-                streamWriter.Close();
-                retorno = true;
+                text.Write(datos);
+                returnAux = true;
             }
+            else
+            {
+                throw new ArchivosException(new Exception());
+            }
+            text.Close();
 
-            return retorno;
+            return returnAux;
         }
+
 
         public bool Leer(string archivo, out string datos)
         {

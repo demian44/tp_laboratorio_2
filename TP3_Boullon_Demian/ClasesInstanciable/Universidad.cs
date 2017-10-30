@@ -51,7 +51,7 @@ namespace ClasesInstanciables
         {
             get
             {
-                if (this._jornada.Count < i && i > 0)
+                if (this._jornada.Count < i && i >= 0)
                     return this._jornada[i];
                 else
                     return null;
@@ -74,18 +74,15 @@ namespace ClasesInstanciables
             this._jornada = new List<Jornada>();
             this._profesores = new List<Profesor>();
         }
+
         public static bool Guardar(Universidad gim)
         {
-            bool retorno = false;
-            if (!ReferenceEquals(gim, null))
-            {
-                Xml<Universidad> xml = new Xml<Universidad>();
-                xml.Guardar("Universidad.xml", gim);
-                retorno = true;
-            }
-            return retorno;
-
+            string nomArchivo = "Universidad.xml";
+            Xml<Universidad> fileXml = new Xml<Universidad>();
+            bool returnAux = fileXml.Guardar(nomArchivo, gim);
+            return returnAux;
         }
+
         private bool MostrarDatos(Universidad gim)
         {
             bool retorno = false;

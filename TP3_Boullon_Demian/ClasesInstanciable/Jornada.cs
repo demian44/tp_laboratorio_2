@@ -42,25 +42,19 @@ namespace ClasesInstanciables
 
         public static bool Guardar(Jornada jornada)
         {
-            if (!File.Exists("Jornada") && !ReferenceEquals(jornada,null))
-            {
-                Texto texto = new Texto();
-                texto.Guardar("Jornada.txt", jornada.ToString());
-                return true;
-            }
-            else
-            {
-                return false;
-                //throw (new ArchivosException(new Exception()));
-            }           
+            Texto texto = new Texto();
+            string fileNamej = "Jornada.txt";
+            bool returnAux = texto.Guardar(fileNamej, jornada.ToString());
+            return returnAux;
         }
+
         public static string Leer()
         {
             string retorno = " ";
-            if (File.Exists("../../Jornada"))
+            if (File.Exists("Jornada.txt"))
             {
                 Texto texto = new Texto();
-                texto.Leer("../../Jornada.txt", out retorno);
+                texto.Leer("Jornada.txt", out retorno);
             }
             return retorno;
         }
@@ -106,9 +100,14 @@ namespace ClasesInstanciables
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("<------------------------------------------------>");
             stringBuilder.AppendLine("CLASE DE " + this._clase.ToString() + " POR " + this._instructor.ToString());
-            stringBuilder.AppendLine("ALUMNOS:");
+            bool flag = true;
             foreach (Alumno alumno in this._alumno)
             {
+                if(flag)
+                {
+                    stringBuilder.AppendLine("ALUMNOS:");
+                    flag = false;
+                }
                 stringBuilder.AppendLine(alumno.ToString());
             }
             return stringBuilder.ToString();
