@@ -31,3 +31,12 @@ C:\TP-02\TP-02\bin\Debug\Entidades.pdb
 C:\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
 C:\TP-02\TP-02\obj\Debug\TP-02.exe
 C:\TP-02\TP-02\obj\Debug\TP-02.pdb
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\bin\Debug\TP-02.exe.config
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\bin\Debug\TP-02.exe
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\bin\Debug\TP-02.pdb
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\bin\Debug\Entidades.dll
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\bin\Debug\Entidades.pdb
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\obj\Debug\TP-02.exe
+C:\tp_laboratorio_2\TP2_Boullon_Demian\TP-02\obj\Debug\TP-02.pdb
