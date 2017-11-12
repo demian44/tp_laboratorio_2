@@ -1,0 +1,6 @@
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.csprojResolveAssemblyReference.cache
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\bin\Debug\Exceptions.dll
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\bin\Debug\Exceptions.pdb
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.dll
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.pdb

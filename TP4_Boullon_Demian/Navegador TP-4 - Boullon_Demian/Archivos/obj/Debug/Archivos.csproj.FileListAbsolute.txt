@@ -1,0 +1,28 @@
+D:\Federico\VB .Net\Visual C#\utn\TP-3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+D:\Federico\VB .Net\Visual C#\utn\TP-3\Archivos\bin\Debug\Archivos.dll
+D:\Federico\VB .Net\Visual C#\utn\TP-3\Archivos\bin\Debug\Archivos.pdb
+D:\Federico\VB .Net\Visual C#\utn\TP-3\Archivos\obj\Debug\Archivos.dll
+D:\Federico\VB .Net\Visual C#\utn\TP-3\Archivos\obj\Debug\Archivos.pdb
+D:\Federico\VB .Net\Visual C#\utn\TP-3\Archivos\bin\Debug\Excepciones.dll
+D:\Federico\VB .Net\Visual C#\utn\TP-3\Archivos\bin\Debug\Excepciones.pdb
+D:\Federico\VB .Net\Visual C#\utn\TP-4\Navegador TP-4\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+D:\Federico\VB .Net\Visual C#\utn\TP-4\Navegador TP-4\Archivos\obj\Debug\Archivos.dll
+D:\Federico\VB .Net\Visual C#\utn\TP-4\Navegador TP-4\Archivos\obj\Debug\Archivos.pdb
+D:\Federico\VB .Net\Visual C#\utn\TP-4\Navegador TP-4\Archivos\bin\Debug\Archivos.dll
+D:\Federico\VB .Net\Visual C#\utn\TP-4\Navegador TP-4\Archivos\bin\Debug\Archivos.pdb
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.dll
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.pdb
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.dll
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.pdb
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.dll
+E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.dll
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.pdb
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.dll
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.pdb
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.dll
+C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
