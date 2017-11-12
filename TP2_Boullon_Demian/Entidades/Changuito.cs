@@ -13,6 +13,7 @@ namespace Entidades_2017
     {
         List<Producto> _productos;
         int _espacioDisponible;
+        const int CAPACIDAD = 5;
         public enum ETipo
         {
             Dulce, Leche, Snacks, Todos
@@ -60,7 +61,7 @@ namespace Entidades_2017
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", this._productos.Count, this._espacioDisponible);
+            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", this._productos.Count, CAPACIDAD);
             sb.AppendLine("");
             foreach (Producto v in this._productos)
             {

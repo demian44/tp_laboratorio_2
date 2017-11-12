@@ -19,3 +19,9 @@ C:\TP-02\Entidades\bin\Debug\Entidades.pdb
 C:\TP-02\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\tp_laboratorio_2\TP2_Boullon_Demian\Entidades\bin\Debug\Entidades.dll
+C:\tp_laboratorio_2\TP2_Boullon_Demian\Entidades\bin\Debug\Entidades.pdb
+C:\tp_laboratorio_2\TP2_Boullon_Demian\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\tp_laboratorio_2\TP2_Boullon_Demian\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\tp_laboratorio_2\TP2_Boullon_Demian\Entidades\obj\Debug\Entidades.dll
+C:\tp_laboratorio_2\TP2_Boullon_Demian\Entidades\obj\Debug\Entidades.pdb
