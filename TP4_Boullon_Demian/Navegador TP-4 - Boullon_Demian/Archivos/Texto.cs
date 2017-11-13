@@ -52,7 +52,7 @@ namespace Archivos
             StreamReader streamReader = new StreamReader(_archivo);
             if (!object.ReferenceEquals(streamReader, null) && this._archivo != string.Empty)
             {
-                for (int i = 0; !streamReader.EndOfStream; i++)
+                while(!streamReader.EndOfStream)
                     dato.Add(streamReader.ReadLine());
 
                 streamReader.Close();

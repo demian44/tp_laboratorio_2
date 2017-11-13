@@ -124,11 +124,17 @@ namespace Navegador
                 string link = txtUrl.Text;
 
                 txtUrl.Text = SetUrl(link, out Uri url);
-                Descargador busqueda = new Descargador(url);
-                busqueda.EventProgress += ProgresoDescarga;
-                busqueda.EventComplet += FinDescarga;
-                Thread hiloDescarga = new Thread(busqueda.IniciarDescarga);
+                Descargador descargador = new Descargador(url);
+
+
+                Thread hiloDescarga = new Thread(descargador.IniciarDescarga);
                 hiloDescarga.Start();
+
+
+                descargador.EventProgress += ProgresoDescarga;
+                descargador.EventComplet += FinDescarga;
+
+               
                 
             }
             catch (Exception exception)
