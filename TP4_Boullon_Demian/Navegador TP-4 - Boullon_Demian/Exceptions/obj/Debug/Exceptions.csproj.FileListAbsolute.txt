@@ -4,3 +4,8 @@ E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\bin\Debug\Except
 E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\bin\Debug\Exceptions.pdb
 E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.dll
 E:\Laboratorio_2\TP4\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Exceptions\bin\Debug\Exceptions.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Exceptions\bin\Debug\Exceptions.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.csprojResolveAssemblyReference.cache
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Exceptions\obj\Debug\Exceptions.pdb

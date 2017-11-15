@@ -26,3 +26,10 @@ C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Arch
 C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
 C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.dll
 C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
