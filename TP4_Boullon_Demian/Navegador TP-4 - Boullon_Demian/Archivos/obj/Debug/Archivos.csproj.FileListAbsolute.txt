@@ -26,6 +26,7 @@ C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Arch
 C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
 C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.dll
 C:\Users\DEM\Desktop\TP4\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
+<<<<<<< HEAD
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.dll
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.pdb
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.dll
@@ -34,3 +35,12 @@ E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_De
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.dll
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
+=======
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Archivos.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\bin\Debug\Exceptions.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Archivos\obj\Debug\Archivos.pdb
+>>>>>>> 791e6ec2149a9f717a5d624ded309165ea278a11

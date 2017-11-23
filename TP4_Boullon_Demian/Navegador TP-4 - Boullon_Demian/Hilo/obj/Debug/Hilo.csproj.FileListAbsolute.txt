@@ -20,3 +20,8 @@ E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_De
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\obj\Debug\Hilo.csproj.CoreCompileInputs.cache
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\obj\Debug\Hilo.dll
 E:\Laboratorio_2\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\obj\Debug\Hilo.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\bin\Debug\Hilo.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\bin\Debug\Hilo.pdb
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\obj\Debug\Hilo.csprojResolveAssemblyReference.cache
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\obj\Debug\Hilo.dll
+D:\tp_laboratorio_2\TP4_Boullon_Demian\Navegador TP-4 - Boullon_Demian\Hilo\obj\Debug\Hilo.pdb

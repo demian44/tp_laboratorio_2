@@ -119,8 +119,8 @@ namespace Navegador
             try
             {
                 string link = txtUrl.Text;
-
-                txtUrl.Text = SetUrl(link, out Uri url);
+                Uri url;
+                txtUrl.Text = SetUrl(link, out url);
                 Descargador descargador = new Descargador(url);
 
 
