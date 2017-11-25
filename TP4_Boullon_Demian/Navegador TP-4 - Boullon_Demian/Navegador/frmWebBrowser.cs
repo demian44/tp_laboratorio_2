@@ -146,7 +146,7 @@ namespace Navegador
 
         private string SetUrl(string link, out Uri url)
         {
-            if (!link.Contains("http:"))
+            if (!link.Contains("http"))
                 url = new Uri(link = ("http://" + link));
             else
                 url = new Uri(link);
